@@ -1,0 +1,109 @@
+<template>
+  <div id="app">
+    <div id="spec"><NavigationBar/></div>
+    <router-view/>
+    <footer class="pb-4 bg-white text-secondary" id="footer">
+        <div class="row justify-content-center">
+            <div class="col-6 col-lg-3 col-xl-3">
+              <h5>China Certificarion & Inspection</h5>
+              <span>CCIC North Amercia Inc. has entered into its excellent service since 1990. Throughout the past years, CCIC North Amercia Inc. has grown and become the biggest overseas branch office of China Certification and Inspection Group.</span>
+            </div>
+            <div class="col-6 col-lg-3 col-xl-2">
+              <h5>Headquarters of CCICNA</h5>
+              <ul class="nav flex-column">
+                <li class="mb-3 d-flex">
+                    <span>8835 Haven Ave.,
+                      <br>Rancho Cucamonga, CA 91730
+                      <br>T +1-909-989-8802
+                      <br>F +1-909-989-6903</span>
+                </li>
+                <li class="mb-3 d-flex">
+                  <img class="icon" src="assets/img/icons/theme/communication/call-1.svg" alt="call-1 icon" data-inject-svg />
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-3 col-xl-2">
+              <h5>Eastern Office of CCICNA</h5>
+              <ul class="nav flex-column">
+                <li class="mb-3 d-flex">
+                    <span>8835 Haven Ave.,
+                    <br>Rancho Cucamonga, CA 91730
+                    <br>T +1-909-989-8802
+                    <br>F +1-909-989-6903</span>
+                </li>
+                <li class="mb-3 d-flex">
+                  <img class="icon" src="assets/img/icons/theme/communication/call-1.svg" alt="call-1 icon" data-inject-svg />
+                </li>
+              </ul>
+            </div>
+            <div class="col-6 col-lg-3 col-xl-2">
+              <h5>Mexico Office of CCICNA</h5>
+              <ul class="nav flex-column">
+                <li class="mb-3 d-flex">
+                    <span>8835 Haven Ave.,
+                    <br>Rancho Cucamonga, CA 91730
+                    <br>T +1-909-989-8802
+                    <br>F +1-909-989-6903</span>
+                </li>
+                <li class="mb-3 d-flex">
+                  <img class="icon" src="assets/img/icons/theme/communication/call-1.svg" alt="call-1 icon" data-inject-svg />
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row justify-content-center mb-2">
+            <div class="col-auto">
+              <ul class="nav">
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <img class="icon undefined" src="static/img/icons/social/instagram.svg" alt="instagram social icon" data-inject-svg />
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <img class="icon undefined" src="assets/img/icons/social/twitter.svg" alt="twitter social icon" data-inject-svg />
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <img class="icon undefined" src="assets/img/icons/social/youtube.svg" alt="youtube social icon" data-inject-svg />
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <img class="icon undefined" src="assets/img/icons/social/medium.svg" alt="medium social icon" data-inject-svg />
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <img class="icon undefined" src="assets/img/icons/social/facebook.svg" alt="facebook social icon" data-inject-svg />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="col col-md-auto text-center">
+              <small class="text-muted">&copy;2019 This page is protected by reCAPTCHA and is subject to the Google <a href="https://www.google.com/policies/privacy/">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service.</a>
+              </small>
+            </div>
+          </div>  
+    </footer>
+  </div>
+</template>
+
+<script>
+  import NavigationBar from './components/NavigationBar.vue';
+  export default {
+    components: {
+    NavigationBar
+  },
+  }
+</script>
+
+<style>
+
+</style>
+  
+ 
+
