@@ -1,15 +1,19 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-//import HelloWorld from '@/components/HelloWorld'
+import About from '@/components/about'
 import CustomersHome from '@/components/CustomersHome'
 import CustomerPage from '@/components/CustomerPage'
-import FAQ from '@/components/FAQ'
 import BlogHome from '@/components/BlogHome'
 import BlogPost from '@/components/BlogPost'
 import Contact from '@/components/Contact'
-import RssAtomSitemap from '@/components/RssAtomSitemap'
-
+import Services from '@/components/Services'
+import ServicePreShip from '@/components/ServicePreShip'
+import ServiceUsed from '@/components/ServiceUsed'
+import FoodProduction from '@/components/FoodProduction'
+import News from '@/components/News'
+import Download from '@/components/Download'
+import Career from '@/components/Career'
 Vue.use(Router)
 
 export default new Router({
@@ -19,6 +23,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: About
     },
     {
       path: '/customers/',
@@ -36,9 +45,14 @@ export default new Router({
       component: Contact
     },
     {
-      path: '/faq',
-      name: 'faq',
-      component: FAQ
+      path: '/download',
+      name: 'download',
+      component: Download
+    },
+    {
+      path: '/news',
+      name: 'news',
+      component: News
     },
     {
       path: '/blog/',
@@ -51,9 +65,32 @@ export default new Router({
       component: BlogPost
     },
     {
-      path: '/rss',
-      name: 'rss',
-      component: RssAtomSitemap
+      path: '/career',
+      name: 'career',
+      component: Career
     },
-  ]
+    { 
+      path: '/preship', 
+      component: ServicePreShip
+    },
+    { 
+      path: '/foodproduction', 
+      component: FoodProduction
+    },    
+    { 
+      path: '/shippingused', 
+      component: ServiceUsed
+    }
+    // { path: '/services/:slug', component: Services,
+    //     children: [
+    //       {
+    //          path: 'preship',
+    //          component: ServicePreShip
+    //       }
+    //     ]
+    //   }
+  ],
+  scrollBehavior (to, from, savedPosition) {
+  return { x: 0, y: 0 }
+  }
 })

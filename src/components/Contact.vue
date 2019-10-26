@@ -1,32 +1,24 @@
 <template> 
   <div id="contact"> 
-    <section class="bg-dark text-light header-inner p-0 jarallax position-relative" data-jarallax data-speed="0.2" data-overlay>
-      <img src="static/img/contact-topbanner.jpg" alt="Image" class="jarallax-img opacity-100">
-      <div class="container py-0">
-        <div class="row my-4 my-md-6" data-aos="fade-up">
-          <div class="col-lg-9 col-xl-8">
-            <h1 class="display-4">Get In Touch</h1>
-            <p class="lead mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa.</p>
-          </div>
-        </div>
-      </div>
-      <div class="divider">
-        <img src="static/img/dividers/divider-2.svg" alt="graphical divider" data-inject-svg />
-      </div>
-    </section>
+    <NavigationBarBlack/>
+      <carousel :per-page="1" :mouse-drag="true" :autoplay="true" :loop="true" class="pt-7">
+        <slide style="background-image:url(static/img/contact-topbanner.jpg)" class="jarallax-img opacity-100 example-slide">
+          <description title="Contact Us"></description>
+        </slide>
+      </carousel> 
     <section>
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-lg-6 col-xl-6">
-            <div class="text-center mb-4">
-              <h2 class="h1">Reaching CCICNA</h2>
+            <div class="text-left mb-4">
+              <h2 class="h1 theme-blue">Reaching CCICNA</h2>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-6 col-xl-6">
-            <div class="text-center mb-4">
-              <h4 class="h4">Headquarters of CCICNA</h4>
+            <div class="text-left mb-4">
+              <h5 class="h5 theme-blue">Headquarters of CCICNA</h5>
               <p>8835 Haven Ave., Rancho Cucamonga, CA 91730, USA</p>
               <p>T +1-909-989-8802</p>
               <p>F +1-909-989-6903</p>
@@ -34,58 +26,62 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-6 col-xl-6">
-            <div class="text-center mb-4">
-              <h4 class="h4">Office Hour</h4>
+            <div class="text-left mb-4">
+              <h5 class="h5 theme-blue">Office Hour</h5>
               <p>9:00am to 5:00pm U.S Pacific Time</p>
-              <h4 class="h4">Main Line</h4>
+              <h5 class="h5 theme-blue">Main Line</h5>
               <p>T +1909-989-8802</p>
-              <h4 class="h4">Customer Service</h4>
-              <p>Inspection on Used-Equipment</p>
+              <h5 class="h5 theme-blue">Customer Service</h5>
+              <p>Inspection on Used-Equipment<br>or Other Services:</p>
+              <p>Inspection on Scraps:</p>
+              <h5 class="h5 theme-blue">Inspection Department</h5>
+              <h5 class="h5 theme-blue">Certificate Department</h5>
+              <h5 class="h5 theme-blue">Accounting Department</h5>
+              <h5 class="h5 theme-blue">Quality Suoervision and Management Department</h5>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-6 col-xl-6">
-            <div class="text-center mb-4">
-              <h4 class="h4">Eastern Office of CCICNA</h4>
-              <p>833-38 Haven Ave., Rancho Cucamonga, CA 91730, USA</p>
-              <p>T +1-909-989-8802</p>
-              <p>F +1-909-989-6903</p>
+            <div class="text-left mb-4">
+              <h5 class="h5 theme-blue">Eastern Office of CCICNA</h5>
+              <p>33-38 Farrington Street, Suite 3D, Flusing, NY 11354</p>
+              <p>T +1-718-886-8003</p>
+              <p>F +1-718-886-8004</p>
             </div>
           </div>
 
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-6 col-xl-6">
-            <div class="text-center mb-4">
-              <h4 class="h4">Eastern Office of CCICNA</h4>
-              <p>833-38 Haven Ave., Rancho Cucamonga, CA 91730, USA</p>
-              <p>T +1-909-989-8802</p>
-              <p>F +1-909-989-6903</p>
+            <div class="text-left mb-4">
+              <h5 class="h5 theme-blue">CCIC Chicago Inc.</h5>
+              <p>1280 Iroquois Ave., Suite 208, Naperville, IL 60563</p>
+              <p>T +1-630-718-1229</p>
+              <p>F +1-630-718-1259</p>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-md-6 col-lg-6 col-xl-6">
-            <div class="text-center mb-4">
-              <h4 class="h4">Eastern Office of CCICNA</h4>
-              <p>833-38 Haven Ave., Rancho Cucamonga, CA 91730, USA</p>
-              <p>T +1-909-989-8802</p>
-              <p>F +1-909-989-6903</p>
-              <p>ccicna@ccicna.com</p>
+            <div class="text-left mb-4">
+              <h5 class="h5 theme-blue">Mexico Office of CCICNA</h5>
+              <p>Adolfo Prieto #215-A, Col. Del Valle, Delg. Benito Juarez, CDMX 03100</p>
+              <p>T +52-55-5682-5662</p>
+              <p>F +52-55-5536-4287</p>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="container">
+      <div style="background-color:#f5f5f5">
         <div class="row justify-content-center">
           <div class="col-md-9 col-lg-8 col-xl-6">
-            <div class="text-center mb-4">
-              <h2 class="h1">Send Us message</h2>
+            <div class="text-left mb-4">
+              <h2 class="h1 theme-blue text-center">Contact Us</h2>
             </div>
-            <form action="/forms/smtp.php" data-form-email novalidate>
+            <form action="https://formspree.io/xogzjrkx" method="POST">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-group">
@@ -130,14 +126,13 @@
                   <div class="d-none alert alert-danger" role="alert" data-error-message>
                     Please fill all fields correctly.
                   </div>
-                  <button type="submit" class="btn btn-primary btn-loading" data-loading-text="Sending">
+                  <button type="submit" class="pl-3 pr-3 mx-auto btn btn-primary btn-loading" data-loading-text="Sending" style="display:block;">
                     <img class="icon" src="static/img/icons/theme/code/loading.svg" alt="loading icon" data-inject-svg />
-                    <span>Send Enquiry</span>
+                    <span>Submit</span>
                   </button>
                 </div>
               </div>
             </form>
-
           </div>
         </div>
       </div>
@@ -146,8 +141,14 @@
 </template>
 
 <script>
-  import { butter } from '@/buttercms'
+  import NavigationBarBlack from './NavigationBarBlack.vue';
+  import description from './description.vue';
+  import { butter } from '@/buttercms';
   export default {
+    components:{ 
+      NavigationBarBlack,
+      description
+    },
     name: 'contact',
     data() {
       return {
@@ -175,5 +176,8 @@
 </script>
 
 <style>
-
+.btn-primary{
+  background-color:#1e3f66;
+  border:#1e3f66;
+}
 </style>
